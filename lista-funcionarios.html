@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="funcionario.adiciona(event)" id="form">
+        <label>
+            Nome:
+            <input type="text" id="nome">
+        </label>
+        <label>
+            Endereço:
+            <input type="text" id="endereco">
+        </label>
+        <label>
+            Salário:
+            <input type="number" id="salario">
+        </label>
+
+        <button type="submit" class="enviar">Enviar</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Salário</th>
+            </tr>
+        </thead>
+
+        <tbody class="lista-funcionarios">
+
+        <tbody>
+    </table>
+
+    <script src="model/Funcionario.js"></script>
+    <script src="model/ListaFuncionario.js"></script>
+    <script src="controller/FuncionarioController.js"></script>
+    <script src="view/FuncionariosView.js"></script>
+
+    <script>
+        const funcionario = new FuncionarioController;
+    </script>
+</body>
+</html>
